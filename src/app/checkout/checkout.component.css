@@ -1,0 +1,46 @@
+
+.body button{
+    border-style:none;
+    background-color: #a26edd;
+    color: white;
+    margin: 10px;
+    padding: 6px;
+}
+/* .header{
+    height: 65vh;
+    margin: 60px;
+    padding: 25px 50px;
+    
+
+} */
+.center{
+    height: 65vh;
+    margin: 50px 100px;
+    padding: 30px;
+    
+
+}
+.center{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.body{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+/* .cartEmptyImg{
+    height: 200px;
+    width: 200px;
+    background-image: url("C:\Users\himaja.kollati\Desktop\Angular Assignment\E-CommerceWebsite\src\img\cart.png");
+    background-size: cover;
+	background-repeat: no-repeat;
+    margin-left: 30px;
+    position:static;
+    
+} */
+h4,h6{
+    font-weight: 400;
+}

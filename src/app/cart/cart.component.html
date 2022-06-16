@@ -1,0 +1,83 @@
+<app-header></app-header>
+<ng-container *ngIf="product.length==0">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">My Cart</h5>
+        </div>
+        <div class="center">
+            <div class="cartEmptyImg">
+            </div>
+            <h4>Your CokoDive Cart is Empty</h4>
+            <h6>Shop Today's Deals</h6>
+            <button (click)="backToProducts()">Shop Now</button>
+        </div>
+    </div>
+
+</ng-container>
+<ng-container *ngIf="product.length!=0">
+    <div class="cart-table">
+        <div class="cart-product">
+            <table class="table ">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Sr.No</th>
+                        <th>Product</th>
+                        <th>Image</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Sub Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of product; let i=index ">
+                        <td>{{i+1}}</td>
+                        <td>{{item.title}}</td>
+                        <td><img style="width: 50px;" src="{{item.image}}" alt=""></td>
+                        <td>{{item.price|currency:'INR'}}</td>
+                        <td>{{item.quantity}}</td>
+                        <td>{{item.total|currency:'INR'}}</td>
+                        <td>
+                            <button (click)="removeItem(item)" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+
+                    </tr>
+                
+                </tbody>
+            </table>
+           
+            <table class="table1">
+                
+                    <thead class="header thead-light"scope="col" colspan="2">
+                        <tr>Cart Total</tr>
+                    </thead>
+                  
+                
+                    <tr>
+                        <th scope="row">Sub Total</th>
+                        <td>{{grandTotal|currency:'INR'}}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Total</th>
+                        <td>{{grandTotal|currency:'INR'}}</td>
+                        
+                      </tr>
+                      <tr>
+                        <th><button class="btn1" (click)="ToProducts()">Add More Products</button></th>
+                        <th><button (click)="ToCheckOut()">CHECK OUT</button></th>
+                    </tr>
+
+                
+            </table>
+            <!-- <div>
+                <table>
+                    <th><button>Add More Products</button></th>
+                    <th><button>CHECK IN</button></th>
+                </table>
+            </div> -->
+            </div>
+    </div>
+
+</ng-container>
+
+ 

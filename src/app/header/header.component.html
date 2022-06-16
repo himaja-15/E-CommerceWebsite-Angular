@@ -1,0 +1,32 @@
+<header>
+    <div class="navbar navbar-dark">
+        <div class="topbanner">
+            <div class="navbar-brand">
+                <div class="item-left">
+                    <ul class="left-ul">
+                        <li><strong style="font-size: 30px;color:#a26edd">COKODIVE</strong></li>
+                        <li><input class="form-control1" [(ngModel)]="searchTerm" (keyup)="search($event)" type="text" placeholder="search here...."></li>
+                    </ul>
+                </div>
+                <div class="item-right">
+                    <ul class="right-ul">
+                        <li>
+                            <button routerLink="cart" (click)="onCartClick()"class=" cart-btn">
+                                <i style="font-size:30px;color: #a26edd;" class="fas fa-cart-plus"></i>
+                                <div style="font-size:10px" class="badge">{{totalItem}}</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button routerLink="login" (click)="onSignOutClick()"class=" cart-btn1">
+                                Sign Out
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+     </div>
+</header>

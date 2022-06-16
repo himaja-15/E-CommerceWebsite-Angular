@@ -1,0 +1,114 @@
+.topbanner{
+    /* background-color: aquamarine; */
+
+    width: 100vw;
+    padding: 0%;
+    margin: 0%;
+   
+}
+.navbar{
+    background-color: #faeff6;
+
+}
+*{
+    background-color: #faeff6;
+
+}
+.navbar-brand{
+    height: 60px;
+    display: flex;
+   
+    padding: 0%;
+    justify-content: space-between;
+     flex-direction: column;
+    flex-wrap: wrap;
+    
+   
+
+}
+.form-control1{
+    background-color: white;
+    border-radius: 10px;
+    border: #8c8494;
+    padding: 10px;
+    margin-left: 31px;
+    margin-top: 0%;
+    width: 450px;
+    height: 35px;
+    color: #2e1c42;
+
+}
+.form-control1:hover{
+    border-color: #a26edd;
+
+}
+
+/* .form-group{
+    /* display: inline-block;
+     width: 500px;
+    margin-left: 50px;
+    border-radius: 5px;
+     
+}*/
+.search-icon{
+    position: absolute;
+    z-index:10;
+    top: 30px;
+    right: 36%;
+    color: brown;
+}
+.cartbtn button{
+    /* padding-left: 430px; */
+    border-style: none;
+}
+.badge{
+    color: grey;
+    background-color: white;
+}
+.item-left li{
+	display: inline;
+	padding: 10px;
+	/*color: white;
+	background-color: black;
+	list-style: none;*/
+    
+}
+.item-left{
+    margin: 0%;
+    padding: 0%;
+}
+.left-ul{
+    padding: 0%;
+   
+}
+.right-ul{
+    padding: 0%;
+     margin-top: 9px;
+}
+.item-right li{
+	display: inline;
+	padding: 10px;
+	/*color: white;
+	background-color: black;
+	list-style: none;*/
+    float: right;
+   
+}
+.item-right{
+	
+   
+}
+button{
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #8c8494;
+}
+@media only screen and (max-width: 870px){
+	.navbar-brand{
+     min-width: 860px;
+     position: sticky;
+
+    }
+		
+	}

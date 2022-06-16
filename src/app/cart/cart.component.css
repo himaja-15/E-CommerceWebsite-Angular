@@ -1,0 +1,87 @@
+body{
+    background:#a26edd;
+}
+.container button{
+    border-style:none;
+    background-color: #a26edd;
+    color: white;
+    margin: 10px;
+    padding: 6px;
+}
+.card{
+    height: 65vh;
+    margin: 25px;
+    padding: 25px;
+
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.cartEmptyImg{
+    height: 200px;
+    width: 200px;
+    background-image: url("C:\Users\himaja.kollati\Desktop\Angular Assignment\E-CommerceWebsite\src\img\cart.png");
+    background-size: cover;
+	background-repeat: no-repeat;
+    margin-left: 30px;
+    position:static;
+    
+}
+h4,h6{
+    font-weight: 400;
+}
+.table{
+   
+    width: 100%;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+.cart-product{
+    padding: 50px;
+}
+.cart-table{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: none;
+    word-wrap: break-word;
+    /* background-color: #faeff6; */
+    background-clip: border-box;
+    /* border: 1px solid rgba(0,0,0,0.2); */
+    border-radius: 0.25rem;
+}
+.center .btn{
+    /* font-size: 14px !important;
+    margin-top: 20px !important;
+    font-weight: 400;
+    padding: 12px 72px;
+    border-radius: 3px !important; */
+}
+.table1{
+    padding-top: 10px;
+    /* left: -50%; */
+    width: 40%;
+    float: right;
+    /* border: 1px solid lightgray; */
+}
+.header{
+    text-align: center;
+    font-size: 25px;
+    /* background-color: lightgray; */
+}
+.table1 button{
+    background-color: #a26edd;
+    border-style: none;
+    color: white;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.btn1{
+    background-color: #b5a3c9;
+}

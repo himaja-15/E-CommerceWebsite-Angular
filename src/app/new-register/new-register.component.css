@@ -1,0 +1,65 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/*background-color:honeydew;*/
+	font-family: sans-serif;
+	/* position: relative; */
+}
+body{
+    background-color: #faeff6;
+
+}
+.login-page{
+    display: flex;
+}
+.loginImg{
+    height: 100vh;
+    width: 60%;
+	background-image: url("C:\Users\himaja.kollati\Desktop\Angular Assignment\E-CommerceWebsite\src\img\pic6.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.form-group1{
+    display: block;
+}
+.total-container1{
+    /* padding: 50px;
+     */
+     margin: auto;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    background-color: #a26edd;
+    padding: 6px;
+    margin: 10px;
+    color: white;
+    border-radius: 5px;
+    
+}
+.form-control1{
+    
+    border:2px solid #faeff6;
+    width: 346px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px;
+    
+    
+}
+.title{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    margin: 30px;
+}
+.form-control1:hover{
+    border:2px solid #c8b4c8;
+}
+.form-group1{
+    padding: 5px;
+}
+.form-group1 div{
+    padding: 2px;
+}

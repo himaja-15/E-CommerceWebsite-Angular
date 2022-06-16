@@ -1,0 +1,86 @@
+<app-header></app-header>
+<ng-container *ngIf="productDetails">
+  <div class="container">
+  <h2 centre>Product Details</h2>
+   <div class="card-table">
+
+      <div class="cart-product">
+
+        <table class="table table-responsive">
+
+          <thead>
+
+            <tr>
+
+              <th>Product Name</th>
+
+              <th>Product Image</th>
+
+              <th>Description</th>
+
+              <th>Price</th>
+
+              </tr>
+
+              </thead>    <tbody>
+
+                <tr>
+
+                  <td>{{ productDetails.title }}</td>
+
+                  <td>
+
+                    <img style="width: 200px" [src]="productDetails.image" alt="" />
+
+                  </td>
+
+                  <td style="width: 25%">{{ productDetails.description }}</td>
+
+                  <th style="width: 12%"> {{ productDetails.price|currency:"INR" }}</th>
+
+                 
+
+                </tr>
+
+                <tr>
+
+                    <td colspan="2"></td>
+
+                    <td>
+
+                      <button routerLink="/Products" class="btn shopmore">
+
+                        Shop More
+
+                      </button>
+
+                    </td>              
+                    <td>
+
+                      <button
+
+                        class="btn addtocart"
+
+                        (click)="addtocart(productDetails)"
+
+                      >
+
+                        Add to cart
+
+                      </button>
+
+                    </td>
+
+                  </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </ng-container>     
